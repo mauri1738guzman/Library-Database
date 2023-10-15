@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="/js/validation.js" defer></script>
+</head>
+<body>
+    
+    <h1>Signup</h1>
+    <form action="index.php" method="get">
+        <button type="submit">Go to Index</button>
+    </form>
+    <form action="process-signup.php" method="post" id="signup" novalidate>
+        <div>
+            <label for="Fname">First Name</label>
+            <input type="text" id="Fname" name="Fname">
+        </div>
+
+        <div>
+            <label for="Lname">Last Name</label>
+            <input type="text" id="Lname" name="Lname" required>
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        
+        <div>
+            <label for="password_confirmation">Repeat password</label>
+            <input type="password" id="password_confirmation" name="password_confirmation">
+        </div>
+        
+        <div>
+            <label for="PhoneNum">Phone Number</label>
+            <input type="tel" id="PhoneNum" name="PhoneNum">
+        </div>
+        
+        <div>
+            <label for="MemberType">Member Type</label>
+            <select id="MemberType" name="MemberType">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="StreetAddress">Street Address</label>
+            <input type="text" id="StreetAddress" name="StreetAddress">
+        </div>
+        
+        <div>
+            <label for="City">City</label>
+            <input type="text" id="City" name="City">
+        </div>
+        
+        <div>
+            <label for="State">State</label>
+            <input type="text" id="State" name="State">
+        </div>
+        
+        <div>
+            <label for="ZipCode">Zip Code</label>
+            <input type="text" id="ZipCode" name="ZipCode">
+        </div>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
